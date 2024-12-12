@@ -1,0 +1,20 @@
+<h2 class="centered-heading"> Students List</h2>
+<div calss = "container">
+<table class="student-table">
+    <thead>
+        <tr>
+            <th class="centered-header">Name</th>
+            <th class="centered-header">Age</th>
+            <th class="centered-header">Email</th>
+            <th class="centered-header">Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let student of students">
+            <td> {{student.name}}</td>
+            <td> {{student.age}}</td>
+            <td> {{student.mailId}}</td>
+            <td> {{student.address}}</td>
+        </tr>
+    </tbody>
+</table>
